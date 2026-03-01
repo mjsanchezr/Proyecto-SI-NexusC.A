@@ -74,7 +74,7 @@ export function BudgetControlPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 {/* Visual Distribution Chart */}
-                <div className="lg:col-span-2 bg-white p-10 rounded-[2.5rem] shadow-xl shadow-gray-100 border border-gray-50 flex flex-col">
+                <div className="lg:col-span-2 bg-white p-6 lg:p-10 rounded-3xl lg:rounded-[2.5rem] shadow-xl shadow-gray-100 border border-gray-50 flex flex-col">
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10">
                         <div>
                             <h3 className="text-xl font-black text-gray-800 tracking-tight">Distribución del Capital</h3>
@@ -86,15 +86,15 @@ export function BudgetControlPage() {
                         </div>
                     </div>
 
-                    <div className="h-[350px] w-full">
+                    <div className="h-[400px] w-full">
                         <ResponsiveContainer width="100%" height="100%">
                             <RePieChart>
                                 <Pie
                                     data={BUDGET_DATA}
                                     cx="50%"
                                     cy="50%"
-                                    innerRadius={90}
-                                    outerRadius={130}
+                                    innerRadius={70}
+                                    outerRadius={100}
                                     paddingAngle={10}
                                     dataKey="value"
                                     animationBegin={200}
@@ -110,10 +110,10 @@ export function BudgetControlPage() {
                                 />
                                 <Legend
                                     iconType="circle"
-                                    layout="vertical"
-                                    verticalAlign="middle"
-                                    align="right"
-                                    formatter={(value: any) => <span className="text-sm font-black text-gray-600 uppercase tracking-wider ml-2">{value}</span>}
+                                    layout="horizontal"
+                                    verticalAlign="bottom"
+                                    align="center"
+                                    formatter={(value: any) => <span className="text-[10px] sm:text-sm font-black text-gray-600 uppercase tracking-wider ml-1 sm:ml-2">{value}</span>}
                                 />
                             </RePieChart>
                         </ResponsiveContainer>
@@ -121,7 +121,7 @@ export function BudgetControlPage() {
                 </div>
 
                 {/* Tracking Deviations List */}
-                <div className="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-gray-100 border border-gray-50">
+                <div className="bg-white p-6 lg:p-10 rounded-3xl lg:rounded-[2.5rem] shadow-xl shadow-gray-100 border border-gray-50">
                     <div className="flex items-center justify-between mb-10">
                         <h3 className="text-xl font-black text-gray-800 tracking-tight">Alertas de Ejecución</h3>
                         <ActivityTrackerBadge />
@@ -167,7 +167,7 @@ function BudgetStat({ title, value, trend, icon, color }: any) {
     };
 
     return (
-        <div className="bg-white p-8 rounded-[2rem] shadow-xl shadow-gray-100 border border-gray-50 flex flex-col group hover:-translate-y-1 transition-all duration-300">
+        <div className="bg-white p-6 lg:p-8 rounded-3xl lg:rounded-[2rem] shadow-xl shadow-gray-100 border border-gray-50 flex flex-col group hover:-translate-y-1 transition-all duration-300">
             <div className="flex items-center justify-between mb-6">
                 <div className={`p-4 rounded-2xl ${colorMap[color]} shadow-lg shadow-${color}-100 transition-transform group-hover:scale-110`}>
                     {icon}

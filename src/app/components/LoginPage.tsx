@@ -217,7 +217,7 @@ export function LoginPage({ onLoginSuccess }: LoginPageProps) {
               </p>
             </div>
 
-            <div className="flex-1 p-4 lg:p-5">
+            <div className="flex-1 p-4 lg:p-5 overflow-y-auto custom-scrollbar">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
                 {DEMO_USERS.map((user) => (
                   <button

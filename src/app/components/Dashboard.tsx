@@ -462,7 +462,7 @@ export function Dashboard({ username, onLogout }: DashboardProps) {
 
             {/* Mobile simplified title */}
             <div className="sm:hidden flex flex-col">
-              <h2 className="text-lg font-black text-gray-800 tracking-tight truncate max-w-[150px]">{getPageTitle()}</h2>
+              <h2 className="text-lg font-black text-gray-800 tracking-tight leading-tight">{getPageTitle()}</h2>
             </div>
           </div>
 

@@ -179,8 +179,8 @@ function PremiumHRCard({ title, value, desc, icon, color, onClick }: any) {
         >
             <div className={`w-14 h-14 rounded-2xl ${accents[color]} flex items-center justify-center mb-8 shadow-inner transition-transform group-hover:scale-110 duration-500`}>{icon}</div>
             <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">{title}</p>
-            <h3 className="text-4xl font-black text-gray-800 tracking-tighter">{value}</h3>
-            <p className="text-[10px] font-bold text-gray-400 mt-2 uppercase tracking-wide">{desc}</p>
+            <h3 className="text-3xl lg:text-4xl font-black text-gray-800 tracking-tighter">{value}</h3>
+            <p className="text-[10px] font-bold text-gray-400 mt-2 uppercase tracking-wide truncate">{desc}</p>
         </div>
     );
 }
