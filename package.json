@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://mario101104s-commits.github.io/Proyecto-SI-NexusC.A/",
+  "homepage": "https://mjsanchezr.github.io/Proyecto-SI-NexusC.A/",
   "scripts": {
     "build": "vite build",
     "dev": "vite",

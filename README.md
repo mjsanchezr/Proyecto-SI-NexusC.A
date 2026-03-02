@@ -1,4 +1,6 @@
 # Nexus C.A. - Sistema Integrado
 
 🔗 **Acceso Público al Sistema:**
-[https://mario101104s-commits.github.io/Proyecto-SI-NexusC.A/](https://mario101104s-commits.github.io/Proyecto-SI-NexusC.A/)
+[https://mjsanchezr.github.io/Proyecto-SI-NexusC.A/](https://mjsanchezr.github.io/Proyecto-SI-NexusC.A/)
+
+La aplicación web fue desarrollada utilizando **React** junto con **TypeScript** y **Vite**, brindando una base moderna, fuertemente tipada y con un rendimiento excepcional. La interfaz gráfica fue diseñada aplicando fielmente **Tailwind CSS**, lo que permitió construir un sistema responsive, con un diseño limpio y visualmente atractivo. Para asegurar una experiencia de usuario interactiva y plenamente accesible, hacemos uso de los excelentes componentes modulares de **Radix UI**, combinados con animaciones fluidas o micro-interacciones impulsadas por **Framer Motion**. Además, la representación visual de datos complejos se maneja a través de **Recharts**. A nivel estructural, el código del proyecto fue organizado estrictamente bajo una arquitectura funcional basada en componentes, separando de manera limpia la presentación visual de la lógica de estado y gestión de formularios (manejada de forma robusta con **React Hook Form**), garantizando así un código limpio, altamente modular, fácil de mantener y preparado para escalar sin problemas.
